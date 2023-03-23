@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './Shared/shared/shared.module';
 import { CageModule } from './Modules/Cage/cage/cage.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
