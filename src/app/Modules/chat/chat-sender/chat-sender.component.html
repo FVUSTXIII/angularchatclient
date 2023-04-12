@@ -1,0 +1,6 @@
+<mat-form-field class="sender">
+    <textarea matInput placeholder="write your message here..." name="message"cols="150" rows="10" [(ngModel)]="message"></textarea>
+    <button mat-icon-button (click)="sendMessage()">
+        <mat-icon>send</mat-icon>
+    </button>
+</mat-form-field>

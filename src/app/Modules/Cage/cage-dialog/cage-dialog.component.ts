@@ -14,6 +14,7 @@ export class CageDialogComponent implements OnInit{
   }
   @Output() cageChanged : EventEmitter<Cage> = new EventEmitter<Cage>();
   selectedCage! : Cage;
+  
   cageFlag: Boolean = true;
   cageOptions : Cage[] = [
     {

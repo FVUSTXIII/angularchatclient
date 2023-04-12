@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CageDialogComponent } from '../cage-dialog/cage-dialog.component';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-cage',
   templateUrl: './cage.component.html',
@@ -24,7 +25,7 @@ export class CageComponent  implements OnInit {
       exitAnimationDuration,
     }).afterClosed().subscribe((result : any) => {
       console.log("where are you taking me? ", result);
-      this._router.navigate(['Users/'], {queryParams : { cageId : result.id}});
+      this._router.navigate(['/Users', result.id]);
     });
   }
 

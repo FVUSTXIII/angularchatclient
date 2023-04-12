@@ -1,0 +1,11 @@
+<div mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>Enter your username: </mat-label>
+        <input matInput type="text" [(ngModel)]="username" (ngModelChange)="onInputChange($event)">
+    </mat-form-field>
+    <div mat-dialog-actions>
+        <button mat-button mat-dialog-close cdkFocusInitial [mat-dialog-close] = "username" color="primary" [disabled]="userFlag">
+           OK
+        </button>
+      </div>
+</div>

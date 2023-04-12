@@ -1,0 +1,10 @@
+<mat-list >
+    <mat-list-item *ngFor="let message of messages" >
+        <div class="content">
+            <h3 mat-line>{{ message.sender }} says: </h3> 
+            <p> {{ message.content}}</p>
+            <p> At: {{ message.timestamp }} </p>
+        </div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+</mat-list>
